@@ -1,137 +1,66 @@
-/*
-Style.css
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
-selector { property:value }
 
-*/
-
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,70
-
-/* ---------------Structure------------------- */
 
 body {
-  background-image:url(images/);
-  margin 0;
+    margin: 0;
 }
 
 header {
-  height: 140px;
-  background-color: #403933;
-  background-image: url(images);
+    background-color: #0b1c51;
+    margin-bottom: 40px;
 }
-
-footer {
-	height: 84px;
-	background-color: #403933;
-	background-image:url(images/subtle_brown_mini_waves.png);
-}
-
-.wrapper {
-	width: 580px;
-	margin: auto;	
-}
-
-img {
- width: 100%;	
-}
-
-
-/* -------  Logo ------- */
 
 header h1 {
-	font-family: 'Playfair Display', serif;
-	color: #f0eee9;
-	margin: 0px;
-	padding-top: 24px;
-	font-size: 48px;
-	text-align:center;
+    font-size: 52px;
+    font-family: 'Gochi Hand';
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
 }
 
-header h2 {
-	font-family: 'Playfair Display', serif;
-	color: #e3e1dc;
-	margin: 0px;
-	padding-top: 16px;
-	font-size: 22px;
-	text-align: center;
+header nav {
+    display: flex;
+    justify-content;
 }
 
-/* -------  Type ------- */
-
-h1, h2 {
-	color: #403933;
-	font-family: 'Noto Serif', serif;
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
 }
 
-h1 { font-size: 38px;}
-h2 { font-size: 30px;}
-
-p, li {
-	font-family: 'Noto Sans', sans-serif;
-	color: #2d2c2a;
-	font-size: 18px;
-	font-weight: 400;
-    line-height: 26px;
+header nav ul li a {
+    font-family: Montserrat;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
 }
 
-ul {
- list-style-image: url('images/common/coffee-cup-icon.png');
+header nav ul li:last-child a {
+    margin-right: 0;
 }
 
-a {
-	font-weight: 700;
-	text-decoration: none;	
-}
+@media all and (min-width: 600px) {
 
-a:link { color: #38786a; }
-a:visited { color: #38786a; }
-a:hover { color: #403933; }
-a:active { color: #403933; }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
 
+    header h1 {
+        font-size: 42px;
+        margin: 14px 0;
+        padding-top: 6px;
+    }
 
-a:hover {
-	text-decoration: underline;	
-}
+    header nav {
+        margin-top: 14px;
+    }
 
-footer p {
-	color: #fff;	
-	text-align: center;
-}
-footer a:link { color: #698378; }
-footer a:visited { color: #698378; }
-footer a:hover { color: #a4cdbc; }
-footer a:active { color: #a4cdbc; }
-
-
-/* -------  Elements ------- */
-
-img, iframe { border-radius: 8px;} 
-
-iframe { border: 1px solid #403933;}
-
-hr { border: .5px solid #403933;}
-
-ul.coffee li {list-style-image: url('images/coffee-cup-icon.png'); }
-
-/* -------  Spacers ------- */  
-/* Note: There are better ways of creating space
-   in a web page, but this is an easy technique
-   for now. */
-
-.gap-sm {
-    height: 50px;
-    width: auto;
-}
-.gap-md {
-    height: 100px;
-    width: auto;
-}
-.gap-lg {
-    height: 200px;
-    width: auto;
-}
-
-.gap-footer {
-    height: 10px;
-    width: auto;
+    header nav ul li a:hover {
+        color: bdbdbd;
+    }
 }
