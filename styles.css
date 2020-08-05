@@ -3,18 +3,28 @@
 
 
 body {
+    background-color: #949daa;
+    font-size: 20px;
     margin: 0;
+    
+}
+
+img {
+   width: 800px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 header {
-    background-color: #0b1c51;
+    background-color: #d8ccbb;
     margin-bottom: 40px;
 }
 
 header h1 {
     font-size: 52px;
     font-family: 'Gochi Hand';
-    color: #fff;
+    color: #e85a4f;
     text-align: center;
     margin: 0;
     padding-top: 20px;
@@ -33,14 +43,23 @@ header nav ul {
 
 header nav ul li a {
     font-family: Montserrat;
-    color: #fff;
     text-decoration: none;
     margin: 0 20px 0 0;
+
 }
 
 header nav ul li:last-child a {
     margin-right: 0;
 }
+
+a:link {
+    color: #464866;
+}
+a:hover {
+    color: #e85a4f;
+}
+
+
 
 @media all and (min-width: 600px) {
 
@@ -63,4 +82,14 @@ header nav ul li:last-child a {
     header nav ul li a:hover {
         color: bdbdbd;
     }
+
+    ul {
+    list-style-type: none;
 }
+
+ul li {
+    float: left;
+    margin: 10px;
+}
+}
+
