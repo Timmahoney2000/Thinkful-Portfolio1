@@ -10,7 +10,7 @@ body {
 }
 
 img {
-   width: 800px;
+   width: 700px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -59,6 +59,10 @@ a:hover {
     color: #e85a4f;
 }
 
+.back-to-top {
+    text-align: right;
+}
+
 
 
 @media all and (min-width: 600px) {
@@ -92,4 +96,3 @@ ul li {
     margin: 10px;
 }
 }
-
