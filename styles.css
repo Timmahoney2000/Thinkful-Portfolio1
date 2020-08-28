@@ -12,6 +12,9 @@ h5 {
     font: bold;
 }
 
+ul {
+font-size-adjust: inherit;
+
 img {
    width: 700px;
     max-width: 100%;
